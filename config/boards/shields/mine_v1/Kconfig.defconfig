@@ -1,0 +1,6 @@
+if SHIELD_MINE_V1
+
+config ZMK_KEYBOARD_NAME
+    default "mine_v1"
+
+endif

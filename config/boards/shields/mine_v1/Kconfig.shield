@@ -1,0 +1,2 @@
+config SHIELD_MINE_V1
+    def_book $(shields_list_contains,mine_v1)
