@@ -6,7 +6,7 @@
 
 / {
     keymap {
-        compatible = "zmk, keymap";
+        compatible = "zmk,keymap";
         
         default_layer {
             bindings = <
@@ -17,15 +17,15 @@
                 &kp KP_N0       &to L_GAME      &kp KP_DOT          &kp KP_ENTER
             >;
         };
-    };
 
-    accent_layer {
-        bindings = <
-                &kp R           &kp F       &kp G           &kp SPACE
-                &kp KP_N4       &kp E       &kp D           &kp B
-                &kp KP_N3       &kp W       &kp S           &to L_NUMPAD
-                &kp KP_N2       &kp Q       &kp A           &kp X
-                &kp KP_N1       &kp TAB     &kp LSHIFT      &kp LCTRL
-        >;
+        game_layer {
+            bindings = <
+                    &kp R           &kp F       &kp G           &kp SPACE
+                    &kp KP_N4       &kp E       &kp D           &kp B
+                    &kp KP_N3       &kp W       &kp S           &to L_NUMPAD
+                    &kp KP_N2       &kp Q       &kp A           &kp X
+                    &kp KP_N1       &kp TAB     &kp LSHIFT      &kp LCTRL
+            >;
+        };
     };
 };
