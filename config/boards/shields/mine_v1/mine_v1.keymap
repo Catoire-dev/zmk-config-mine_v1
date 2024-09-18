@@ -27,5 +27,5 @@
                 &kp KP_N2       &kp Q       &kp A           &kp X
                 &kp KP_N1       &kp TAB     &kp LSHIFT      &kp LCTRL
         >;
-    }
+    };
 };
