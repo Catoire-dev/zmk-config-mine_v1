@@ -7,13 +7,25 @@
 
         default_layer {
             bindings = <
-&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7        &kp N8        &kp N9      &kp N0     &kp ASTERISK
-&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T         &kp Y         &kp U         &kp I         &kp O       &kp P      &kp BACKSPACE
-&kp ESCAPE      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9      &kp F10    &kp DELETE
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N         &kp M         &kp COMMA     &kp PERIOD  &kp SLASH  &kp ENTER
-                                            &kp ASTERISK  &kp ASTERISK  &kp ASTERISK  &kp ASTERISK  &kp ASTERISK  &kp ASTERISK
-                                            &kp LEFT_ALT  &kp SPACE     &kp LCTRL     &kp ASTERISK  &kp ASTERISK  &kp ASTERISK
-                                            &kp ASTERISK  &kp ASTERISK  &kp ASTERISK  &kp ASTERISK  &kp ASTERISK  &kp ASTERISK
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7    &kp N8         &kp N9      &kp N0         &kp MINUS
+&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T         &kp Y         &kp U     &kp I          &kp O       &kp P          &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G         &kp H         &kp J     &kp K          &kp L       &kp SEMICOLON  &kp NON_US_BACKSLASH
+&kp GRAVE       &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N         &kp M     &kp COMMA      &kp PERIOD  &kp SLASH      &kp EQUAL
+                                            &kp ASTERISK  &kp LEFT_WIN  &kp ASTERISK  &kp ASTERISK  &kp HOME  &kp PAGE_UP
+                                            &kp LEFT_ALT  &kp SPACE     &kp LCTRL     &kp ENTER     &mo 1     &kp ESCAPE
+                                            &kp ASTERISK  &mo 1         &kp DELETE    &kp ASTERISK  &kp END   &kp PAGE_DOWN
+            >;
+        };
+
+        special_character {
+            bindings = <
+&trans  &trans  &trans            &trans             &trans           &trans      &trans  &trans          &trans        &trans     &trans  &trans
+&trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans      &trans  &trans          &kp UP_ARROW  &trans     &trans  &trans
+&trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL        &trans      &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
+&trans  &trans  &trans            &trans             &trans           &trans      &trans  &trans          &trans        &trans     &trans  &trans
+                                  &kp C_MUTE         &kp C_VOLUME_UP  &trans      &trans  &trans          &trans
+                                  &kp C_PREV         &kp C_PAUSE      &kp C_NEXT  &trans  &trans          &trans
+                                  &trans             &kp C_VOL_DN     &trans      &trans  &trans          &trans
             >;
         };
     };
