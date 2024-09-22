@@ -1,9 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define L_NUMPAD  0
-#define L_GAME    1
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -14,9 +11,9 @@
                 &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A
                 &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A
                 &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A
-                                  &kp A &kp A &kp A &kp A &kp A &kp A
-                                  &kp A &kp A &kp A &kp A &kp A &kp A
-                                  &kp A &kp A &kp A &kp A &kp A &kp A
+                &kp A &kp A &kp A &kp A &kp A &kp A
+                &kp A &kp A &kp A &kp A &kp A &kp A
+                &kp A &kp A &kp A &kp A &kp A &kp A
             >;
         };
     };
