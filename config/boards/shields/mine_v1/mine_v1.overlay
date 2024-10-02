@@ -12,16 +12,12 @@
         
         col-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>,
                     <&gpio0 31 GPIO_ACTIVE_HIGH>,
-                    // <&pro_micro 16 GPIO_ACTIVE_HIGH>, // not working
-                    // <&pro_micro 15 GPIO_ACTIVE_HIGH>, // not working
-                    // <&pro_micro 14 GPIO_ACTIVE_HIGH>, // not working
                     <&gpio0 29 GPIO_ACTIVE_HIGH>,
                     <&gpio0 02 GPIO_ACTIVE_HIGH>,
                     <&gpio1 15 GPIO_ACTIVE_HIGH>,
-                    //----------------------------------
-                    <&gpio1 13 GPIO_ACTIVE_HIGH>, // double (3 5)
-                    <&gpio1 11 GPIO_ACTIVE_HIGH>, // double (4 6)
-                    <&gpio0 10 GPIO_ACTIVE_HIGH>, // double (2 7)
+                    <&gpio1 13 GPIO_ACTIVE_HIGH>,
+                    <&gpio1 11 GPIO_ACTIVE_HIGH>,
+                    <&gpio0 10 GPIO_ACTIVE_HIGH>,
                     <&pro_micro 10 GPIO_ACTIVE_HIGH>,
                     <&gpio1 1 GPIO_ACTIVE_HIGH>,
                     <&gpio1 2 GPIO_ACTIVE_HIGH>,
