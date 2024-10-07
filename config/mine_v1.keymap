@@ -2,30 +2,39 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <35 36>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &kp NUMBER_6    &kp N7    &kp N8         &kp N9      &kp N0     &kp MINUS
-&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y           &kp U     &kp I          &kp O       &kp P      &kp SEMICOLON
-&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &kp H           &kp J     &kp K          &kp L       &kp SQT    &kp BACKSPACE
-&kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N           &kp M     &kp COMMA      &kp PERIOD  &kp SLASH  &kp ENTER
-                                            &kp ASTERISK  &kp SPACE     &kp ASTERISK    &kp ASTERISK    &kp HOME  &kp PAGE_UP
-                                            &kp LEFT_ALT  &mo 1         &kp LEFT_SHIFT  &kp C_PREVIOUS  &mo 1     &kp C_NEXT
-                                            &kp LEFT_WIN  &kp ASTERISK  &kp DELETE      &kp ASTERISK    &kp END   &kp PAGE_DOWN
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &kp NUMBER_6     &kp N7        &kp N8         &kp N9      &kp N0         &kp MINUS
+&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y            &kp U         &kp I          &kp O       &kp P          &kp EQUAL
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &kp H            &kp J         &kp K          &kp L       &kp SEMICOLON  &kp SQT
+&kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N            &kp M         &kp COMMA      &kp PERIOD  &kp SLASH      &kp ENTER
+                                            &kp ASTERISK  &kp SPACE     &kp ASTERISK    &kp C_KBIA_NEXT  &kp UP_ARROW  &kp PAGE_UP
+                                            &kp LEFT_ALT  &mo 1         &kp LEFT_SHIFT  &kp LEFT         &mo 1         &kp RIGHT
+                                            &kp LEFT_WIN  &kp ASTERISK  &kp DELETE      &kp C_KBIA_PREV  &kp DOWN      &kp PAGE_DOWN
             >;
         };
 
         special_character {
             bindings = <
-&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans          &trans          &trans            &trans             &kp EQUAL
-&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans          &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE
-&trans  &trans  &trans  &trans      &trans           &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp BACKSLASH      &trans
-&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans          &trans          &trans            &trans             &trans
-                        &kp C_MUTE  &kp C_VOLUME_UP  &trans      &trans  &trans          &trans
-                        &kp C_PREV  &kp C_PAUSE      &kp C_NEXT  &trans  &trans          &trans
-                        &trans      &kp C_VOL_DN     &trans      &trans  &trans          &trans
+&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &trans             &trans
+&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE
+&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &kp BACKSLASH      &kp BACKSPACE
+&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &trans             &trans
+                        &kp C_MUTE  &kp C_VOLUME_UP  &trans      &trans  &trans  &trans
+                        &kp C_PREV  &kp C_PAUSE      &kp C_NEXT  &trans  &trans  &trans
+                        &trans      &kp C_VOL_DN     &trans      &trans  &trans  &trans
             >;
         };
     };
