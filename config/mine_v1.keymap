@@ -9,6 +9,27 @@
             bindings = <&kp DELETE>;
             key-positions = <35 36>;
         };
+
+        comb_php_array_arrow {
+            bindings = <&php_array_arrow>;
+            key-positions = <55 24 45>;
+        };
+    };
+
+    macros {
+        php_arrow: php_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            label = "PHP_ARROW";
+        };
+
+        php_array_arrow: php_array_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "PHP_ARRAY_ARROW";
+        };
     };
 
     keymap {
@@ -31,7 +52,7 @@
 &trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &trans             &trans
 &trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE
 &trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &kp BACKSLASH      &kp BACKSPACE
-&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &trans             &trans
+&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &php_arrow        &trans             &trans
                         &kp C_MUTE  &kp C_VOLUME_UP  &trans      &trans  &trans  &trans
                         &kp C_PREV  &kp C_PAUSE      &kp C_NEXT  &trans  &trans  &trans
                         &trans      &kp C_VOL_DN     &trans      &trans  &trans  &trans
