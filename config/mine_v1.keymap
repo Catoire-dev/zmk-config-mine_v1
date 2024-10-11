@@ -51,8 +51,8 @@
             bindings = <
 &trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &trans             &trans
 &trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE
-&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &kp BACKSLASH      &kp BACKSPACE
-&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &php_arrow        &trans             &trans
+&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &trans            &trans             &kp BACKSPACE
+&trans  &trans  &trans  &trans      &trans           &trans      &trans  &trans  &trans  &php_arrow        &trans             &kp ENTER
                         &kp C_MUTE  &kp C_VOLUME_UP  &trans      &trans  &trans  &trans
                         &kp C_PREV  &kp C_PAUSE      &kp C_NEXT  &trans  &trans  &trans
                         &trans      &kp C_VOL_DN     &trans      &trans  &trans  &trans
