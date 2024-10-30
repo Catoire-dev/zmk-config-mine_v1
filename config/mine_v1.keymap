@@ -50,25 +50,25 @@
 
         special_character {
             bindings = <
-&trans  &trans  &trans  &trans      &trans           &trans      &trans     &trans     &trans     &trans     &trans            &trans
-&trans  &trans  &trans  &trans      &trans           &trans      &trans     &kp PG_UP  &kp UP     &kp LBKT   &kp RBKT          &kp GRAVE
-&trans  &trans  &trans  &trans      &trans           &trans      &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &php_array_arrow  &kp BACKSPACE
-&trans  &trans  &trans  &trans      &trans           &trans      &trans     &kp PG_DN  &kp HOME   &kp END    &php_arrow        &kp ENTER
-                        &kp C_MUTE  &kp C_VOLUME_UP  &trans      &mkp LCLK  &mkp MCLK  &mkp RCLK
-                        &kp C_PREV  &kp C_PAUSE      &kp C_NEXT  &trans     &trans     &trans
-                        &trans      &kp C_VOL_DN     &trans      &trans     &trans     &trans
+&trans     &trans  &trans  &trans      &trans           &trans      &trans     &trans     &trans     &trans     &trans            &trans
+&kp GRAVE  &trans  &trans  &trans      &trans           &trans      &trans     &kp PG_UP  &kp UP     &kp LBKT   &kp RBKT          &trans
+&trans     &trans  &trans  &trans      &trans           &trans      &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &php_array_arrow  &kp BACKSPACE
+&trans     &trans  &trans  &trans      &trans           &trans      &trans     &kp PG_DN  &kp HOME   &kp END    &php_arrow        &kp ENTER
+                           &kp C_MUTE  &kp C_VOLUME_UP  &trans      &mkp LCLK  &mkp MCLK  &mkp RCLK
+                           &kp C_PREV  &kp C_PAUSE      &kp C_NEXT  &trans     &trans     &trans
+                           &trans      &kp C_VOL_DN     &trans      &trans     &trans     &trans
             >;
         };
 
         number_layer {
             bindings = <
-&trans  &trans        &trans        &trans        &trans           &trans        &trans        &trans        &trans        &trans        &trans            &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0      &kp GRAVE
-&trans  &trans        &trans        &trans        &trans           &trans        &trans        &trans        &trans        &trans        &trans            &trans
-&trans  &trans        &trans        &trans        &trans           &trans        &trans        &trans        &trans        &php_arrow    &php_array_arrow  &trans
-                                    &kp C_MUTE    &kp C_VOLUME_UP  &trans        &mkp LCLK     &mkp MCLK     &mkp RCLK
-                                    &kp C_PREV    &kp C_PAUSE      &kp C_NEXT    &trans        &trans        &trans
-                                    &trans        &kp C_VOL_DN     &trans        &trans        &trans        &trans
+&trans     &trans        &trans        &trans        &trans           &trans        &trans        &trans        &trans        &trans        &trans            &trans
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0      &trans
+&trans     &trans        &trans        &trans        &trans           &trans        &trans        &trans        &trans        &trans        &trans            &trans
+&trans     &trans        &trans        &trans        &trans           &trans        &trans        &trans        &trans        &php_arrow    &php_array_arrow  &trans
+                                       &kp C_MUTE    &kp C_VOLUME_UP  &trans        &mkp LCLK     &mkp MCLK     &mkp RCLK
+                                       &kp C_PREV    &kp C_PAUSE      &kp C_NEXT    &trans        &trans        &trans
+                                       &trans        &kp C_VOL_DN     &trans        &trans        &trans        &trans
             >;
         };
     };
