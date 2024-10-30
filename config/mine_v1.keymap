@@ -44,7 +44,7 @@
 &kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B       &kp N         &kp M      &kp COMMA        &kp PERIOD  &kp SLASH      &kp BACKSLASH
                                             &kp LCTRL     &kp SPACE     &none       &none         &kp SPACE  &kp RCTRL
                                             &kp LEFT_ALT  &mo 1         &none       &kp LEFT_ALT  &mo 1      &kp RIGHT_SHIFT
-                                            &kp LEFT_WIN  &none         &kp DELETE  &kp DELETE    &none      &kp RIGHT_WIN
+                                            &kp LEFT_WIN  &mo 2         &kp DELETE  &kp DELETE    &none      &kp RIGHT_WIN
             >;
         };
 
