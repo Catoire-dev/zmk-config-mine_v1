@@ -64,8 +64,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans         &trans        &trans     &trans            &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp PAGE_UP    &kp UP_ARROW  &trans     &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp LEFT       &kp DOWN      &kp RIGHT  &php_array_arrow  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp PAGE_DOWN  &kp HOME      &kp END    &php_arrow        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp LEFT       &kp DOWN      &kp RIGHT  &php_array_arrow  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp PAGE_DOWN  &kp HOME      &kp END    &php_arrow        &kp ENTER
                         &trans  &trans  &trans  &mkp LCLK  &mkp MCLK      &mkp RCLK
                         &trans  &trans  &trans  &trans     &trans         &trans
                         &trans  &trans  &trans  &trans     &trans         &trans
