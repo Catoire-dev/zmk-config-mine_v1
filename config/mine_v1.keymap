@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -52,13 +51,13 @@
 
         special_character {
             bindings = <
-&trans   &trans      &trans  &trans      &trans           &trans         &trans     &trans     &trans     &trans     &trans            &trans
-&kp ESC  &kt ESCAPE  &trans  &trans      &trans           &trans         &trans     &kp PG_UP  &kp UP     &kp LBKT   &kp RBKT          &trans
-&kp TAB  &kp TAB     &trans  &trans      &trans           &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &php_array_arrow  &kp BACKSPACE
-&trans   &trans      &trans  &trans      &trans           &trans         &trans     &kp PG_DN  &kp HOME   &kp END    &php_arrow        &kp ENTER
-                             &kp C_MUTE  &kp C_VOLUME_UP  &trans         &mkp LCLK  &mkp MCLK  &mkp RCLK
-                             &kp C_PREV  &kp C_PAUSE      &kp C_NEXT     &trans     &trans     &trans
-                             &trans      &kp C_VOL_DN     &kp BACKSPACE  &trans     &trans     &trans
+&trans      &trans  &trans  &trans      &trans           &trans         &trans     &trans     &trans     &trans     &trans            &trans
+&kp ESCAPE  &trans  &trans  &trans      &trans           &trans         &trans     &kp PG_UP  &kp UP     &kp LBKT   &kp RBKT          &trans
+&trans      &trans  &trans  &trans      &trans           &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &php_array_arrow  &kp BACKSPACE
+&trans      &trans  &trans  &trans      &trans           &trans         &trans     &kp PG_DN  &kp HOME   &kp END    &php_arrow        &kp ENTER
+                            &kp C_MUTE  &kp C_VOLUME_UP  &trans         &mkp LCLK  &mkp MCLK  &mkp RCLK
+                            &kp C_PREV  &kp C_PAUSE      &kp C_NEXT     &trans     &trans     &trans
+                            &trans      &kp C_VOL_DN     &kp BACKSPACE  &trans     &trans     &trans
             >;
         };
 
